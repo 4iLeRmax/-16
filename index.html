@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221101134757">
+  <title>Главная</title>
+</head>
+<body>
+  <div class="black"></div>
+
+  <div class="wrapper">
+    <aside>
+  <img src="img/aside img.jpg" class="aside__img">
+  <div class="aside__container">
+    <div class="aside__profile">
+      <div class="aside__photo">
+        <img src="img/profile photo.jpg">
+      </div>
+      <h1 class="aside__name">Дмитрий Валак</h1>
+      <p class="aside__info">блог front-end разработчика</p>
+      <div class="aside__social">
+        <img src="img/instagram.svg">
+        <img src="img/vk.svg">
+        <img src="img/pinterest.svg">
+      </div>
+      <p class="aside__text">
+        Front-end разработчик. Практик верстки сайтов.
+        Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
+      </p>
+      <div class="aside__btns">
+        <a href="works.html" class="aside__btn">Мои работы</a>
+        <button class="aside__btn">Написать мне</button>
+      </div>
+    </div>
+  </div>
+</aside>
+    <main>
+
+      <div class="header">
+        <div class="menu">
+
+          <div class="mobile__profile">
+            <div class="aside__img">
+              <img src="img/aside img.jpg">
+            </div>
+            <div class="aside__profile">
+              <div class="aside__photo">
+                <img src="img/profile photo.jpg">
+              </div>
+              <div class="aside__profile__info">
+                <h1 class="aside__name">Дмитрий Валак</h1>
+                <p class="aside__info">блог front-end разработчика</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="index.html" class="menu__link">Главная</a>
+          <a href="#" class="menu__link sub">Статьи <div class="triangle"></div></a>
+          <div class="subnav">
+            <a href="#" class="subnav__link">Создание сайтов</a>
+            <a href="#" class="subnav__link">Интернет-маркетинг</a>
+            <a href="#" class="subnav__link">Продвижение видео</a>
+          </div>
+          <a href="#" class="menu__link">Обо мне</a>
+          <a href="#" class="menu__link">Реклама</a>
+          <a href="profile.html" class="menu__link dn">Профиль</a>
+
+          <div class="aside__btns">
+            <a href="works.html" class="aside__btn">Мои работы</a>
+            <button class="aside__btn">Написать мне</button>
+          </div>
+
+        </div>
+        <div class="burger__menu"></div>
+        <div class="header__search">
+          <a href="profile.html" class="menu__link">Профиль</a>
+          <input type="text" class="search" placeholder="Поиск по блогу">
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="container">
+          <div class="cards__news">
+
+            <div class="card__news">
+              <img src="img/card__news 1.jpg">
+              <div class="card__news__info">
+                <h1 class="card__news__title">Отдыхаю на природе</h1>
+                <p class="card__news__date">21.09.2020</p>
+              </div>
+            </div>
+
+            <div class="card__news">
+              <img src="img/card__news 2.jpg">
+              <div class="card__news__info">
+                <h1 class="card__news__title">Заканчиваю сложный проект</h1>
+                <p class="card__news__date">15.09.2020</p>
+              </div>
+            </div>
+
+            <div class="card__news">
+              <img src="img/card__news 3.jpg">
+              <div class="card__news__info">
+                <h1 class="card__news__title">Переехал в новую квартиру</h1>
+                <p class="card__news__date">11.09.2020</p>
+              </div>
+            </div>
+
+            <div class="card__news">
+              <img src="img/card__news 4.jpg">
+              <div class="card__news__info">
+                <h1 class="card__news__title">Осень пришла!</h1>
+                <p class="card__news__date">28.08.2020</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comment__block">
+            <div class="comment__search">
+              <input type="text" id="comment__input" placeholder="Напишите что-нибудь">
+              <button class="comment__btn arrow" id="send"><img src="img/Send.svg"></button>
+              <input type="file" id="photo">
+              <!-- <button class="comment__btn photo"><img src="img/add photo.svg"></button> -->
+              <label for="photo" class="comment__btn photo"><img src="img/add photo.svg"></label>
+            </div>
+            <div id="comments">
+
+              <div class="comment">
+                <img src="img/comment 1.jpg">
+                <h1 class="comment__title">Как я сходил на FrontEnd Conf 2021</h1>
+                <p class="comment__text pt-15">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                </p>
+                <div class="comment__add">
+                  <div class="comment__date__big">
+                    <span>21.06.2020</span>
+                    <div class="circle"></div>
+                    <span>создание сайтов</span>
+                  </div>
+                  <a href="#">читать</a>
+                </div>
+              </div>
+
+              <div class="comment">
+                <div class="img">
+                  <img src="img/comment 2.png" class="main__img">
+                  <picture><source srcset="img/play.webp" type="image/webp"><img src="img/play.png" class="play"></picture>
+                </div>
+                <h1 class="comment__title">Купил новый ноутбук за 150 000 руб</h1>
+                <div class="comment__add">
+                  <div class="comment__date__big">
+                    <span>21.06.2020</span>
+                    <div class="circle"></div>
+                    <span>продвижение видео</span>
+                  </div>
+                  <a href="#">оставить комментарий</a>
+                </div>
+              </div>
+
+              <div class="comment">
+                <img src="img/comment 4.jpg">
+                <h1 class="comment__title">Как создавать сайты легко</h1>
+                <p class="comment__text pt-15">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                </p>
+                <div class="comment__add">
+                  <div class="comment__date__big">
+                    <span>21.06.2020</span>
+                    <div class="circle"></div>
+                    <span>создание сайтов</span>
+                  </div>
+                  <a href="readPage1.html">читать</a>
+                </div>
+              </div>
+
+              <div class="comment">
+                <img src="img/comment 3.jpg">
+                <h1 class="comment__title">Как писать код быстро и безболезненно?</h1>
+                <p class="comment__text pt-15">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                </p>
+                <div class="comment__add">
+                  <div class="comment__date__big">
+                    <span>21.06.2020</span>
+                    <div class="circle"></div>
+                    <span>создание сайтов</span>
+                  </div>
+                  <a href="#">читать</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tabs__btns">
+              <button class="tabs__btn prev"><</button>
+              <button class="tabs__btn">1</button>
+              <button class="tabs__btn active">2</button>
+              <button class="tabs__btn">3</button>
+              <button class="tabs__btn next">></button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+    <footer></footer>
+  </div>
+
+  <script src="js/app.min.js?_v=20221101134757"></script>
+  <script>
+    let comments = [];
+// loadComments();
+document.getElementById('send').onclick = function(){
+  event.preventDefault();
+  let commentBody = document.getElementById('comment__input');
+
+  if(commentBody.value){
+    let comment = {
+      body: commentBody.value,
+      time: Math.floor(Date.now()/1000),
+    }
+  
+    commentBody.value = '';
+    comments.push(comment);
+    // saveComments();
+    showComments();
+  
+  
+    console.log(comments);
+  }
+  
+}
+// function saveComments(){
+//   localStorage.setItem('comments', JSON.stringify(comments)); 
+// }
+// function loadComments(){
+//   if(localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
+//   showComments();
+// }
+function showComments(){
+  let commentField = document.getElementById('comments');
+  let out;
+  comments.forEach(function(item){
+    out = '';
+    out += `<p class="comment__text">${item.body}</p>`
+    out += `<p class="comment__date">${timeConverter(item.time)}</p>`
+  });
+  let card = document.createElement('div');
+  card.classList.add('comment');
+
+  commentField.appendChild(card);
+  card.innerHTML = out;
+  console.log(commentField);
+}
+function timeConverter(item){
+  var a = new Date(item * 1000);
+  // console.log(a);
+  // var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var year = a.getFullYear();
+  // var month = a.getMonth();
+
+
+  var month = a.getMonth();
+  if(month < 10){
+    month = `0${month}`;
+  }
+
+
+  var date = a.getDate();
+  var time = `${date}.${month}.${year}`;
+  return time;
+}
+  </script>
+</body>
+</html>
