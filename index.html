@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html', {
-    "title": "Главная"
-  })
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221102114509">
+  <title>Главная</title>
+</head>
 <body>
   <div class="black"></div>
 
   <div class="wrapper">
-    @@include('html/header.html', {})
+    <aside>
+  <img src="img/aside img.jpg" class="aside__img">
+  <div class="aside__container">
+    <div class="aside__profile">
+      <div class="aside__photo">
+        <img src="img/profile photo.jpg">
+      </div>
+      <h1 class="aside__name">Дмитрий Валак</h1>
+      <p class="aside__info">блог front-end разработчика</p>
+      <div class="aside__social">
+        <img src="img/instagram.svg">
+        <img src="img/vk.svg">
+        <img src="img/pinterest.svg">
+      </div>
+      <p class="aside__text">
+        Front-end разработчик. Практик верстки сайтов.
+        Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
+      </p>
+      <div class="aside__btns">
+        <a href="works.html" class="aside__btn">Мои работы</a>
+        <button class="aside__btn">Написать мне</button>
+      </div>
+    </div>
+  </div>
+</aside>
     <main>
 
       <div class="header">
@@ -15,11 +43,11 @@
 
           <div class="mobile__profile">
             <div class="aside__img">
-              <img src="@img/aside img.jpg">
+              <img src="img/aside img.jpg">
             </div>
             <div class="aside__profile">
               <div class="aside__photo">
-                <img src="@img/profile photo.jpg">
+                <img src="img/profile photo.jpg">
               </div>
               <div class="aside__profile__info">
                 <h1 class="aside__name">Дмитрий Валак</h1>
@@ -57,7 +85,7 @@
           <div class="cards__news">
 
             <div class="card__news">
-              <img src="@img/card__news 1.jpg">
+              <img src="img/card__news 1.jpg">
               <div class="card__news__info">
                 <h1 class="card__news__title">Отдыхаю на природе</h1>
                 <p class="card__news__date">21.09.2020</p>
@@ -65,7 +93,7 @@
             </div>
 
             <div class="card__news">
-              <img src="@img/card__news 2.jpg">
+              <img src="img/card__news 2.jpg">
               <div class="card__news__info">
                 <h1 class="card__news__title">Заканчиваю сложный проект</h1>
                 <p class="card__news__date">15.09.2020</p>
@@ -73,7 +101,7 @@
             </div>
 
             <div class="card__news">
-              <img src="@img/card__news 3.jpg">
+              <img src="img/card__news 3.jpg">
               <div class="card__news__info">
                 <h1 class="card__news__title">Переехал в новую квартиру</h1>
                 <p class="card__news__date">11.09.2020</p>
@@ -81,7 +109,7 @@
             </div>
 
             <div class="card__news">
-              <img src="@img/card__news 4.jpg">
+              <img src="img/card__news 4.jpg">
               <div class="card__news__info">
                 <h1 class="card__news__title">Осень пришла!</h1>
                 <p class="card__news__date">28.08.2020</p>
@@ -93,15 +121,15 @@
           <div class="comment__block">
             <div class="comment__search">
               <input type="text" id="comment__input" placeholder="Напишите что-нибудь">
-              <button class="comment__btn arrow" id="send"><img src="@img/Send.svg"></button>
+              <button class="comment__btn arrow" id="send"><img src="img/Send.svg"></button>
               <input type="file" id="photo">
-              <!-- <button class="comment__btn photo"><img src="@img/add photo.svg"></button> -->
-              <label for="photo" class="comment__btn photo"><img src="@img/add photo.svg"></label>
+              <!-- <button class="comment__btn photo"><img src="img/add photo.svg"></button> -->
+              <label for="photo" class="comment__btn photo"><img src="img/add photo.svg"></label>
             </div>
             <div id="comments">
 
               <div class="comment">
-                <img src="@img/comment 1.jpg">
+                <img src="img/comment 1.jpg">
                 <h1 class="comment__title">Как я сходил на FrontEnd Conf 2021</h1>
                 <p class="comment__text pt-15">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
@@ -118,8 +146,8 @@
 
               <div class="comment">
                 <div class="img">
-                  <img src="@img/comment 2.png" class="main__img">
-                  <img src="@img/play.png" class="play">
+                  <img src="img/comment 2.png" class="main__img">
+                  <picture><source srcset="img/play.webp" type="image/webp"><img src="img/play.png" class="play"></picture>
                 </div>
                 <h1 class="comment__title">Купил новый ноутбук за 150 000 руб</h1>
                 <div class="comment__add">
@@ -133,7 +161,7 @@
               </div>
 
               <div class="comment">
-                <img src="@img/comment 4.jpg">
+                <img src="img/comment 4.jpg">
                 <h1 class="comment__title">Как создавать сайты легко</h1>
                 <p class="comment__text pt-15">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
@@ -149,7 +177,7 @@
               </div>
 
               <div class="comment">
-                <img src="@img/comment 3.jpg">
+                <img src="img/comment 3.jpg">
                 <h1 class="comment__title">Как писать код быстро и безболезненно?</h1>
                 <p class="comment__text pt-15">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
@@ -181,10 +209,10 @@
       </div>
 
     </main>
-    @@include('html/footer.html', {})
+    <footer></footer>
   </div>
 
-  <script src="js/app.min.js"></script>
+  <script src="js/app.min.js?_v=20221102114509"></script>
   <script>
     let comments = [];
 // loadComments();
